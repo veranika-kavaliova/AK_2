@@ -1,0 +1,390 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Анжелика Кашкан · светлая</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Анжелика Кашкан — психолог, гештальт-терапевт и EMDR-специалист. Онлайн и очно в Варшаве.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Great+Vibes&display=swap">
+<style>
+/* Layout: the client's own stationery brought to the web — blush paper, ink monogram, spaced capitals, and her signature line motif (tangle → line → open circle) used as the page's dividers. Single light look, matching her printed brand. */
+:root{
+  --paper:#FBF8F5; --sheet:#F4EDE7; --sheet-2:#EDE3DB;
+  --ink:#5A4E48; --soft:#958983; --line:#E4DAD2;
+  --ochre:#D9B36A; --ochre-soft:#F6EBD3; --mist:#C9D3D6; --mist-soft:#EAF0F1;
+  --f-body:"Jost","Montserrat",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-script:"Great Vibes","Segoe Script","Brush Script MT",cursive;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+html,body{overflow-x:clip}
+body{background:var(--paper);color:var(--ink);font:300 17px/1.65 var(--f-body);-webkit-font-smoothing:antialiased}
+h1,h2,h3{margin:0;font-weight:300;text-wrap:balance}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:1.5px solid var(--ink);outline-offset:4px}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.caps{font:400 12.5px/1.4 var(--f-body);letter-spacing:.32em;text-transform:uppercase}
+.script{font-family:var(--f-script);font-weight:400;letter-spacing:0}
+
+/* the brand line: tangle — line — open circle */
+.motif{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:0;width:100%}
+.motif svg.tangle{width:var(--ms,44px);height:var(--ms,44px);display:block;overflow:visible}
+.motif svg.tangle path{fill:none;stroke:var(--soft);stroke-width:1;stroke-linecap:round;stroke-linejoin:round}
+.motif .ln{height:1px;background:var(--soft);position:relative;display:flex;justify-content:center}
+.motif .ln span{position:absolute;bottom:8px;background:transparent;white-space:nowrap}
+.motif .ring{width:calc(var(--ms,44px)*.78);height:calc(var(--ms,44px)*.78);border-radius:50%;border:1.5px solid var(--soft);display:block}
+.draw .ln{transform-origin:left;transform:scaleX(var(--k,1));transition:transform 1.6s cubic-bezier(.2,.7,.2,1)}
+.draw .ring{opacity:var(--ro,1);transition:opacity .6s 1.3s}
+
+/* header */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:40;background:var(--paper)}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid transparent;transition:border-color .3s}
+header.top.s{border-bottom-color:var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:12px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{height:34px;width:auto;display:block}
+.brand .caps{font-size:10.5px;line-height:1.35;letter-spacing:.28em}
+nav.menu{display:flex;gap:26px}
+nav.menu a{text-decoration:none;font:400 11.5px var(--f-body);letter-spacing:.24em;text-transform:uppercase;color:var(--soft)}
+nav.menu a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;text-decoration:none;cursor:pointer;font:400 12.5px/1 var(--f-body);letter-spacing:.24em;text-transform:uppercase;padding:17px 28px;border:1px solid var(--ink);background:var(--ink);color:#FFFDFB;border-radius:999px;transition:background .25s,color .25s}
+.btn:hover{background:var(--ochre-soft);color:var(--ink);border-color:var(--ochre)}
+.btn.out{background:transparent;color:var(--ink)}
+.btn.out:hover{background:var(--sheet);color:var(--ink)}
+.btn.small{padding:12px 16px;font-size:11px}
+
+/* hero = the business card, enlarged */
+.hero .wrap{display:flex;flex-direction:column;align-items:center;text-align:center;gap:34px;padding-block:44px 64px;position:relative}
+.hero{position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;left:50%;top:-10%;width:900px;height:700px;max-width:140vw;transform:translateX(-50%);background:radial-gradient(closest-side at 30% 40%,var(--ochre-soft),transparent 70%),radial-gradient(closest-side at 72% 55%,var(--mist-soft),transparent 72%);pointer-events:none;z-index:0}
+.hero .wrap>*{position:relative;z-index:1}
+.card{background:transparent;padding:0;display:flex;flex-direction:column;align-items:center;gap:26px;width:min(100%,640px)}
+.card .ctas{justify-content:center}
+.card .lead{margin-inline:auto}
+.facts{justify-content:center}
+.mono{display:flex;flex-direction:column;align-items:center;gap:14px}
+.mono img{width:clamp(190px,24vw,300px);height:auto;display:block}
+.mono .caps{font-size:clamp(12px,1.2vw,14px);line-height:1.5;color:var(--soft)}
+.card .motif{--ms:40px;width:100%}
+.card .motif .ln span{font:400 12px var(--f-body);letter-spacing:.42em;text-transform:uppercase}
+.card .lead{font-size:clamp(18px,1.7vw,21px);line-height:1.55;max-width:34ch}
+.card .ctas{display:flex;gap:10px;flex-wrap:wrap}
+.photo{position:relative;width:min(100%,340px)}
+.photo .frame{aspect-ratio:4/5;overflow:hidden;background:var(--sheet-2);border-radius:999px 999px 24px 24px}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:50% 25%;display:block}
+.photo .tagline{position:absolute;left:50%;bottom:-18px;transform:translateX(-50%);white-space:nowrap;background:var(--paper);padding:10px 22px;border-radius:999px;box-shadow:0 14px 30px -22px rgba(90,78,72,.5)}
+.photo .tagline .script{font-size:30px;line-height:1}
+.facts{display:flex;gap:34px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:20px}
+.facts b{display:block;font:300 34px/1 var(--f-body);letter-spacing:-.01em}
+.facts span{font:400 10.5px var(--f-body);letter-spacing:.24em;text-transform:uppercase;color:var(--soft)}
+
+/* section heading with motif */
+.sec{padding-block:64px;scroll-margin-top:72px}
+.sh{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;margin-bottom:36px;max-width:760px}
+.sh .motif{--ms:30px;max-width:420px}
+.sh .motif .ring{border-width:1.5px}
+.sh h2{font-size:clamp(32px,4vw,50px);line-height:1.08;letter-spacing:-.01em}
+.sh h2 .script{font-size:1.35em;line-height:.8;display:inline-block;transform:translateY(.06em)}
+.sh p{color:var(--soft);max-width:56ch}
+
+/* requests */
+.reqs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 56px;list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.reqs li{display:grid;grid-template-columns:34px minmax(0,1fr);gap:14px;padding:16px 0;border-bottom:1px solid var(--line);font-size:17.5px;line-height:1.45}
+.reqs li span{font:400 11px/2.2 var(--f-body);letter-spacing:.2em;color:var(--soft)}
+.note{margin-top:22px;font-size:16px}
+.note .script{font-size:30px;line-height:1;margin-right:6px}
+
+/* about */
+.about{background:var(--sheet);border-radius:40px;margin-inline:max(12px,env(safe-area-inset-left,0px))}
+.about .grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:56px;align-items:center}
+.about .frame{aspect-ratio:4/5;overflow:hidden;background:var(--sheet-2);max-width:360px;border-radius:24px}
+.about .frame img,.about .frame video{width:100%;height:100%;object-fit:cover;display:block}
+.about .txt{display:flex;flex-direction:column;gap:16px}
+.about .hi{font:400 46px/1 var(--f-script)}
+.about .txt p{max-width:56ch}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.chips span{font:400 11px var(--f-body);letter-spacing:.2em;text-transform:uppercase;border:1px solid var(--line);padding:9px 14px;border-radius:999px;background:var(--paper)}
+.changes{margin-top:18px;border-top:1px solid var(--line);padding-top:16px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 28px;font-size:15.5px}
+.changes div{display:grid;grid-template-columns:22px 1fr;gap:6px}
+.changes div::before{content:"";width:12px;height:12px;border:1.5px solid var(--ochre);border-radius:50%;margin-top:7px}
+.changes .cap{grid-column:1/-1;display:block}
+.changes .cap::before{display:none}
+
+/* approach */
+.methods{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.method{background:var(--sheet);padding:34px;display:flex;flex-direction:column;gap:14px;border-radius:28px}
+.method:nth-child(2){background:var(--mist-soft)}
+.method .caps{color:var(--soft);font-size:11px}
+.method h3{font-size:34px;line-height:1.05}
+.method p{font-size:16px}
+
+/* steps */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;position:relative}
+.steps::before{content:"";position:absolute;left:0;right:0;top:22px;height:1px;background:var(--line)}
+.steps li{position:relative;display:flex;flex-direction:column;gap:8px}
+.steps .dot{width:44px;height:44px;border-radius:50%;background:var(--paper);border:1px solid var(--soft);display:flex;align-items:center;justify-content:center;font:300 18px var(--f-body);position:relative}
+.steps li:last-child .dot{background:var(--ochre-soft);border-color:var(--ochre)}
+.steps h3{font:400 13px var(--f-body);letter-spacing:.24em;text-transform:uppercase;margin-top:10px}
+.steps p{font-size:15.5px;color:var(--soft)}
+.conf{margin-top:30px;font-size:15px;color:var(--soft)}
+.conf b{color:var(--ink);font-weight:400}
+
+/* prices = certificate */
+.cert{background:var(--sheet);padding:clamp(28px,4vw,52px);border-radius:32px}
+.cert .ttl{font:400 clamp(40px,5vw,62px)/1 var(--f-script);text-align:center;margin-bottom:30px}
+.prow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 24px;align-items:end;padding:18px 0;border-bottom:1px solid var(--line)}
+.prow h3{font-size:clamp(21px,2.2vw,28px)}
+.prow .amt{font:300 clamp(40px,4.6vw,58px)/1 var(--f-body);letter-spacing:-.02em;white-space:nowrap}
+.prow .amt small{font:400 11px var(--f-body);letter-spacing:.2em;text-transform:uppercase;color:var(--soft);margin-left:8px}
+.prow p{font-size:15px;color:var(--soft);grid-column:1/-1}
+.rules{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;margin-top:28px}
+.rules div{font-size:14.5px}
+.rules .caps{display:block;font-size:10.5px;color:var(--soft);margin-bottom:6px}
+
+/* education */
+.edu .grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:48px;align-items:start}
+.edu ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.edu li{display:grid;grid-template-columns:130px minmax(0,1fr);gap:20px;padding:15px 0;border-bottom:1px solid var(--line)}
+.edu .y{font:400 12px/1.9 var(--f-body);letter-spacing:.14em;color:var(--soft)}
+.edu b{display:block;font-weight:400}
+.edu li span{font-size:15px;color:var(--soft)}
+.nw{background:var(--ochre-soft);padding:26px;border-radius:24px}
+.nw h3{font:400 12px var(--f-body);letter-spacing:.28em;text-transform:uppercase;margin-bottom:14px}
+.nw ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px;font-size:15.5px}
+.nw li{display:grid;grid-template-columns:18px 1fr;gap:6px}
+.nw li::before{content:"";width:9px;height:1px;background:var(--ink);margin-top:13px}
+.nw p{margin-top:14px;font-size:14px;color:var(--soft)}
+.scans{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:16px}
+.scan{aspect-ratio:3/4;border-radius:14px;background:var(--sheet);display:flex;align-items:center;justify-content:center;font:400 10px var(--f-body);letter-spacing:.2em;text-transform:uppercase;color:var(--soft);overflow:hidden;padding:0;border:1px dashed var(--line);cursor:zoom-in}
+.scan.empty{cursor:default}
+.scan img{width:100%;height:100%;object-fit:cover;display:block}
+dialog{border:0;padding:0;background:transparent;max-width:min(900px,94vw)}
+dialog::backdrop{background:rgba(90,78,72,.7)}
+dialog img{width:100%;display:block}
+dialog button{margin-top:10px;background:var(--sheet);border:1px solid var(--ink);padding:9px 16px;font:400 11px var(--f-body);letter-spacing:.2em;text-transform:uppercase;cursor:pointer}
+
+/* contact */
+.contact{background:var(--sheet);border-radius:40px 40px 0 0;margin-inline:max(12px,env(safe-area-inset-left,0px))}
+.contact .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:start}
+.contact .big{font:400 clamp(52px,6.6vw,86px)/.95 var(--f-script)}
+.contact .lead{margin-top:16px;max-width:36ch}
+.ch{margin-top:26px;border-top:1px solid var(--line)}
+.ch a{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none;transition:padding .25s}
+.ch a:hover{padding-left:10px}
+.ch .caps{font-size:11px;color:var(--soft)}
+.ch b{font-weight:300;font-size:22px}
+.contact .tz{margin-top:14px;font-size:14px;color:var(--soft)}
+form{display:flex;flex-direction:column;gap:18px;padding:30px;background:var(--paper);border-radius:28px}
+form .caps{font-size:11px}
+form label{display:flex;flex-direction:column;gap:6px}
+form input,form textarea{font:300 17px/1.5 var(--f-body);color:var(--ink);background:transparent;border:0;border-bottom:1px solid var(--line);padding:8px 0;width:100%;border-radius:0}
+form input:focus,form textarea:focus{outline:none;border-bottom-width:2px}
+form textarea{min-height:60px;resize:vertical}
+.seg{display:flex;flex-wrap:wrap;gap:8px}
+.seg button{font:400 11px var(--f-body);letter-spacing:.18em;text-transform:uppercase;color:var(--ink);background:transparent;border:1px solid var(--line);padding:10px 14px;cursor:pointer;border-radius:999px}
+.seg button[aria-pressed="true"]{border-color:var(--ochre);background:var(--ochre-soft)}
+.fstatus{font-size:14px;min-height:1.4em}
+.formnote{font-size:13px;color:var(--soft)}
+
+footer{padding-block:34px 40px}
+footer .motif{--ms:30px;margin-bottom:18px}
+footer .motif .ring{border-width:1.5px}
+footer .motif .ln span{font:400 10.5px var(--f-body);letter-spacing:.32em;text-transform:uppercase}
+footer .row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--soft)}
+
+@media (max-width:900px){
+  nav.menu{display:none}
+  .hero .wrap,.about .grid,.edu .grid,.contact .grid{grid-template-columns:minmax(0,1fr);gap:36px}
+  .photo{width:min(76%,300px)}
+  .photo .tagline{padding:8px 16px}
+  .photo .tagline .script{font-size:22px}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:30px}
+  .steps::before{display:none}
+  .rules{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  .sec{padding-block:48px}
+  .hero .wrap{padding-block:20px 44px}
+  .brand .caps{display:none}
+  .reqs,.methods,.changes{grid-template-columns:minmax(0,1fr)}
+  .reqs{gap:0}
+  .method{padding:24px}
+  .steps{grid-template-columns:minmax(0,1fr);row-gap:18px}
+  .steps li{display:grid;grid-template-columns:44px 1fr;gap:4px 14px}
+  .steps .dot{grid-row:span 2}
+  .steps h3{margin-top:4px}
+  .rules{grid-template-columns:minmax(0,1fr)}
+  .edu li{grid-template-columns:minmax(0,1fr);gap:2px}
+  form{padding:22px}
+  .facts{gap:22px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.draw .ln{transform:none}.draw .ring{opacity:1}}
+</style>
+
+<header class="top" id="top"><div class="wrap">
+  <a class="brand" href="#hero"><img src="logo.png" alt="Ak."><span class="caps">Анжелика<br>Кашкан</span></a>
+  <nav class="menu" aria-label="Разделы"><a href="#requests">Запросы</a><a href="#about">Обо мне</a><a href="#approach">Подход</a><a href="#prices">Стоимость</a><a href="#education">Образование</a></nav>
+  <a class="btn small" href="#contact">Записаться</a>
+</div></header>
+
+<main>
+  <section class="hero" id="hero"><div class="wrap">
+    <div class="card">
+      <div class="mono"><img src="logo.png" alt="Ak. — монограмма Анжелики Кашкан"><span class="caps">Анжелика Кашкан</span></div>
+      <div class="motif draw" id="heroMotif"><svg class="tangle" viewBox="0 0 40 40" aria-hidden="true"><path/></svg><div class="ln"><span>Психолог</span></div><i class="ring" aria-hidden="true"></i></div>
+      <p class="lead">Помогаю разобраться в отношениях с собой и с другими, пройти через кризис и перестать жить прошлым. Гештальт-терапия и EMDR.</p>
+      <div class="ctas"><a class="btn" href="https://t.me/psy_kashkan" target="_blank" rel="noopener">Написать в Telegram</a><a class="btn out" href="#contact">Оставить заявку</a></div>
+      <div class="facts"><div><b>6 лет</b><span>практики</span></div><div><b>4000+</b><span>часов</span></div><div><b>онлайн</b><span>и очно в Варшаве</span></div></div>
+    </div>
+    <figure class="photo" style="margin:0"><div class="frame"><img src="portrait.jpg" alt="Анжелика Кашкан"></div><figcaption class="tagline"><span class="script">бережно и на равных</span></figcaption></figure>
+  </div></section>
+
+  <section class="sec" id="requests"><div class="wrap">
+    <div class="sh"><div class="motif"><svg class="tangle" viewBox="0 0 40 40" aria-hidden="true"><path/></svg><div class="ln"></div><i class="ring" aria-hidden="true"></i></div><span class="caps">С чем можно прийти</span><h2>Если тебе это <span class="script">знакомо</span></h2></div>
+    <ul class="reqs">
+      <li><span>01</span>Сложно в отношениях — с собой и с близкими</li>
+      <li><span>02</span>Отношения, в которых теряешь себя</li>
+      <li><span>03</span>Тревога, которая не отпускает</li>
+      <li><span>04</span>Кризис, переезд, жизнь в эмиграции</li>
+      <li><span>05</span>Ощущение себя ребёнком в теле взрослого</li>
+      <li><span>06</span>Кажется, что живёшь не свою жизнь</li>
+      <li><span>07</span>Трудно принимать решения, не хватает уверенности</li>
+      <li><span>08</span>Прошлое так влияет, что определяет настоящее</li>
+      <li><span>09</span>Эмоции захлёстывают, сложно с ними справиться</li>
+      <li><span>10</span>Зависимое поведение</li>
+    </ul>
+    <p class="note"><span class="script">Не знаешь, с чего начать?</span> Это нормально — распутаем вместе.</p>
+  </div></section>
+
+  <section class="sec about" id="about"><div class="wrap grid">
+    <div class="frame"><video src="video.mp4" controls playsinline preload="none" data-video></video><img src="about.jpg" alt="Анжелика Кашкан" hidden></div>
+    <div class="txt">
+      <span class="caps" style="color:var(--soft)">Обо мне</span>
+      <p class="hi">Привет, я Анжелика</p>
+      <p>Я психолог и гештальт-терапевт, работаю с травмой в методе EMDR. Живу в Варшаве и принимаю очно в районе Мокотув, а онлайн работаю с людьми из Европы, России, Беларуси, Казахстана.</p>
+      <p>В работе я тёплая и бережная, при этом устойчивая и могу быть прямой, когда это важно. Внимательна к деталям — к тому, что звучит между слов. Вне кабинета люблю путешествовать на машине и долгие пешие прогулки.</p>
+      <div class="chips"><span>тёплая</span><span>устойчивая</span><span>внимательная</span></div>
+      <div class="changes"><span class="cap caps" style="color:var(--soft);font-size:11px">Что обычно замечают клиенты</span>
+        <div>Лучше понимают себя — свои чувства и реакции</div><div>Видят происходящее объёмнее</div>
+        <div>Строят близкие отношения, не теряя себя</div><div>Прошлое перестаёт определять настоящее</div></div>
+    </div>
+  </div></section>
+
+  <section class="sec" id="approach"><div class="wrap">
+    <div class="sh"><div class="motif"><svg class="tangle" viewBox="0 0 40 40" aria-hidden="true"><path/></svg><div class="ln"></div><i class="ring" aria-hidden="true"></i></div><span class="caps">Как я работаю</span><h2>Из клубка — <span class="script">к ясности</span></h2><p>Метод выбираем под твой запрос и твой темп.</p></div>
+    <div class="methods">
+      <article class="method"><span class="caps">Основной подход</span><h3>Гештальт-терапия</h3><p>Смотрим на то, что происходит с тобой здесь и сейчас — в чувствах, в теле, в отношениях. Через живой контакт становится видно, как ты обходишься с собой и другими, и появляется выбор действовать иначе.</p></article>
+      <article class="method"><span class="caps">Работа с травмой</span><h3>EMDR (ДПДГ)</h3><p>Метод для работы с тяжёлыми событиями прошлого, которые продолжают влиять на настоящее. Помогает переработать болезненные воспоминания, чтобы они стали частью истории, а не текущей жизни.</p></article>
+    </div>
+  </div></section>
+
+  <section class="sec" id="how" style="padding-top:8px"><div class="wrap">
+    <div class="sh"><span class="caps">Как всё устроено</span><h2>Как проходит <span class="script">работа</span></h2></div>
+    <ol class="steps">
+      <li><span class="dot">1</span><h3>Заявка</h3><p>Пишешь в Telegram или оставляешь заявку. Подбираем время.</p></li>
+      <li><span class="dot">2</span><h3>Подтверждение</h3><p>Предоплата первой встречи — не позднее чем за час до сессии.</p></li>
+      <li><span class="dot">3</span><h3>Знакомство</h3><p>Говорим о запросе. Ты решаешь, подхожу ли я тебе.</p></li>
+      <li><span class="dot">4</span><h3>Регулярно</h3><p>Онлайн или очно. Дальше оплата в день сессии.</p></li>
+    </ol>
+    <p class="conf"><b>Конфиденциально.</b> Всё, что ты рассказываешь, остаётся между нами. Исключения — ситуации, когда есть угроза жизни.</p>
+  </div></section>
+
+  <section class="sec" id="prices" style="padding-top:16px"><div class="wrap">
+    <div class="cert">
+      <p class="ttl">Стоимость консультаций</p>
+      <div class="prow"><h3>Индивидуальная сессия</h3><div class="amt">45 €<small>50 мин</small></div><p>Гештальт-терапия: отношения, тревога, кризисы, самооценка, эмиграция</p></div>
+      <div class="prow"><h3>Сессия EMDR (ДПДГ)</h3><div class="amt">50 €<small>60 мин</small></div><p>Работа с событиями прошлого, которые мешают жить сейчас</p></div>
+      <div class="rules">
+        <div><span class="caps">Предоплата</span>Для новых клиентов 100%, не позднее чем за час до первой сессии</div>
+        <div><span class="caps">Перенос</span>Бесплатно, если предупредить за 24 часа</div>
+        <div><span class="caps">Оплата</span>Переводом или на карту</div>
+        <div><span class="caps">Где</span>Онлайн или очно — Варшава, Мокотув. Время CET</div>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="sec edu" id="education"><div class="wrap">
+    <div class="sh"><div class="motif"><svg class="tangle" viewBox="0 0 40 40" aria-hidden="true"><path/></svg><div class="ln"></div><i class="ring" aria-hidden="true"></i></div><span class="caps">Образование</span><h2>Образование и <span class="script">обучение</span></h2></div>
+    <div class="grid">
+      <ol>
+        <li><span class="y">2024—2026</span><div><b>Московский гештальт институт</b><span>«Кризисы и травмы», 240 часов</span></div></li>
+        <li><span class="y">2023—2024</span><div><b>ОПП «Гештальт-подход»</b><span>«Психиатрия для психологов», 100 часов</span></div></li>
+        <li><span class="y">2020—2021</span><div><b>Московский гештальт институт</b><span>«Зависимость и созависимость: интегративный гештальт-подход», 180 часов</span></div></li>
+        <li><span class="y">2019—2024</span><div><b>Московский гештальт институт</b><span>«Основы гештальт-терапии», 1 и 2 ступени</span></div></li>
+        <li><span class="y">2014—2019</span><div><b>РГСУ</b><span>Высшее образование, психология</span></div></li>
+      </ol>
+      <aside>
+        <div class="nw"><h3>С чем я не работаю</h3><ul><li>Психиатрические диагнозы — шизофрения, биполярное расстройство</li><li>Дети и подростки до 18 лет</li><li>Зависимость в период активного употребления</li></ul><p>Если это про тебя — напиши, помогу найти подходящего специалиста.</p></div>
+        <div class="scans" id="scans"></div>
+      </aside>
+    </div>
+  </div></section>
+
+  <section class="sec contact" id="contact"><div class="wrap grid">
+    <div>
+      <span class="caps" style="color:var(--soft)">Запись</span>
+      <p class="big" style="margin-top:10px">Давай познакомимся</p>
+      <p class="lead">Напиши мне — расскажу о свободном времени и отвечу на вопросы. Первый шаг самый трудный, дальше пойдём вместе.</p>
+      <div class="ch">
+        <a href="https://t.me/psy_kashkan" target="_blank" rel="noopener"><span class="caps">Telegram</span><b>@psy_kashkan</b></a>
+        <a href="https://instagram.com/psy_kashkan" target="_blank" rel="noopener"><span class="caps">Instagram</span><b>@psy_kashkan</b></a>
+      </div>
+      <p class="tz">Время по Варшаве (CET). Онлайн — из любой страны.</p>
+    </div>
+    <form id="form" novalidate>
+      <span class="caps">Оставить заявку</span>
+      <label for="fName"><span class="caps" style="color:var(--soft)">Как к тебе обращаться</span><input id="fName" type="text" autocomplete="given-name" placeholder="Имя"></label>
+      <label for="fContact"><span class="caps" style="color:var(--soft)">Как с тобой связаться</span><input id="fContact" type="text" placeholder="Telegram, WhatsApp или телефон"></label>
+      <div><span class="caps" style="color:var(--soft);display:block;margin-bottom:8px">Формат</span><div class="seg" id="fFormat" role="group" aria-label="Формат"><button type="button" aria-pressed="true">Онлайн</button><button type="button" aria-pressed="false">Очно</button><button type="button" aria-pressed="false">Не знаю</button></div></div>
+      <label for="fMsg"><span class="caps" style="color:var(--soft)">Коротко о запросе · по желанию</span><textarea id="fMsg" placeholder="Можно в двух словах"></textarea></label>
+      <a class="btn" id="fSend" href="https://t.me/psy_kashkan" target="_blank" rel="noopener" style="align-self:flex-start">Отправить в Telegram</a>
+      <p class="fstatus" id="fStatus" role="status"></p>
+      <p class="formnote">Текст заявки скопируется, и откроется чат со мной — останется вставить и отправить. Данные никуда не сохраняются.</p>
+    </form>
+  </div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="motif"><svg class="tangle" viewBox="0 0 40 40" aria-hidden="true"><path/></svg><div class="ln"><span>Анжелика Кашкан · психолог</span></div><i class="ring" aria-hidden="true"></i></div>
+  <div class="row"><span>© Анжелика Кашкан</span><span>Не является медицинской услугой. В кризисе обратись в экстренную службу своей страны.</span></div>
+</div></footer>
+
+<dialog id="lb"><img id="lbImg" alt=""><button type="button" id="lbClose">Закрыть</button></dialog>
+
+<script>
+(function(){
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+/* the tangle from her stationery: a loose ball of thread, drawn once per seed */
+function rng(seed){let s=seed>>>0;return()=>((s=Math.imul(s^s>>>15,1|s)+0x6D2B79F5|0,((s^s>>>7)>>>0)/4294967296))}
+function tangle(seed){const r=rng(seed);let d='',x=20,y=20,a=r()*6.28;d=`M${x.toFixed(1)} ${y.toFixed(1)}`;
+  for(let i=0;i<34;i++){a+=1.1+(r()-.5)*1.6;const rad=10+r()*8;const nx=20+Math.cos(a)*rad,ny=20+Math.sin(a)*rad;const cx=(x+nx)/2+(r()-.5)*6,cy=(y+ny)/2+(r()-.5)*6;d+=` Q${cx.toFixed(1)} ${cy.toFixed(1)} ${nx.toFixed(1)} ${ny.toFixed(1)}`;x=nx;y=ny}
+  d+=` Q${(x+40)/2} ${(y+20)/2} 40 20`;return d}
+$$('svg.tangle path').forEach((p,i)=>p.setAttribute('d',tangle(11+i*7)));
+/* hero line draws in from the tangle to the circle */
+const hm=$('#heroMotif');
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches){hm.style.setProperty('--k',0);hm.style.setProperty('--ro',0);requestAnimationFrame(()=>requestAnimationFrame(()=>{hm.style.setProperty('--k',1);hm.style.setProperty('--ro',1)}))}
+/* header border */
+const hdr=$('#top');addEventListener('scroll',()=>hdr.classList.toggle('s',scrollY>8),{passive:true});
+/* about: video if present, else photo */
+const v=$('video[data-video]'),ai=v.nextElementSibling;const toPhoto=()=>{v.hidden=true;ai.hidden=false};fetch(v.getAttribute('src'),{method:'HEAD'}).then(r=>{if(!r.ok)toPhoto()}).catch(toPhoto);
+/* scans */
+const sc=$('#scans');
+Promise.all([1,2,3,4,5,6].map(i=>new Promise(res=>{const im=new Image();im.onload=()=>res(im);im.onerror=()=>res(null);im.src=`diploma-${i}.jpg`}))).then(list=>{const ok=list.filter(Boolean);
+  if(ok.length)ok.forEach((im,i)=>{const b=document.createElement('button');b.type='button';b.className='scan';b.setAttribute('aria-label','Открыть документ '+(i+1));im.alt='Документ '+(i+1);b.appendChild(im);sc.appendChild(b)});
+  else sc.innerHTML='<div class="scan empty">скан диплома</div><div class="scan empty">скан диплома</div>'});
+sc.addEventListener('click',e=>{const b=e.target.closest('button.scan');if(!b)return;$('#lbImg').src=b.querySelector('img').src;try{$('#lb').showModal()}catch(err){$('#lb').setAttribute('open','')}});
+$('#lbClose').addEventListener('click',()=>$('#lb').close());$('#lb').addEventListener('click',e=>{if(e.target.id==='lb')$('#lb').close()});
+/* form → copy + open Telegram */
+$('#fFormat').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;$$('#fFormat button').forEach(x=>x.setAttribute('aria-pressed',x===b))});
+$('#form').addEventListener('submit',e=>e.preventDefault());
+$('#fSend').addEventListener('click',()=>{const fmt=$('#fFormat [aria-pressed="true"]').textContent;
+  const t=`Здравствуйте, Анжелика! Хочу записаться на консультацию.\nИмя: ${$('#fName').value||'—'}\nСвязь: ${$('#fContact').value||'—'}\nФормат: ${fmt}${$('#fMsg').value?'\nЗапрос: '+$('#fMsg').value:''}`;
+  const ok=()=>{$('#fStatus').textContent='Текст заявки скопирован — вставь его в открывшемся чате и отправь.'};const fail=()=>{$('#fStatus').textContent='Не получилось скопировать — просто напиши в открывшемся чате, что хочешь записаться.'};
+  try{navigator.clipboard.writeText(t).then(ok,fail)}catch(err){fail()}});
+})();
+</script>
+
+</body></html>
